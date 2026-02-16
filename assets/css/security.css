@@ -1,0 +1,171 @@
+.security-gate {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--bs-dark);
+    transition: all 0.2s ease-in-out;
+}
+
+.security-gate:hover {
+    transform: translateY(-5px);
+}
+
+.security-gate .bi {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--bs-warning);
+}
+
+.security-incident {
+    position: relative;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+}
+
+.security-incident.level-info {
+    border-right: 4px solid var(--bs-info);
+}
+
+.security-incident.level-warning {
+    border-right: 4px solid var(--bs-warning);
+}
+
+.security-incident.level-critical {
+    border-right: 4px solid var(--bs-danger);
+    animation: pulse-danger 2s infinite;
+}
+
+@keyframes pulse-danger {
+    0% {
+        border-color: var(--bs-danger);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: var(--bs-danger);
+    }
+}
+
+.security-incident .incident-time {
+    font-size: 0.875rem;
+    color: var(--bs-gray-500);
+}
+
+.security-incident .incident-title {
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.security-incident .incident-level {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.security-incident .incident-level.level-info {
+    background: var(--bs-info);
+    color: var(--bs-dark);
+}
+
+.security-incident .incident-level.level-warning {
+    background: var(--bs-warning);
+    color: var(--bs-dark);
+}
+
+.security-incident .incident-level.level-critical {
+    background: var(--bs-danger);
+    color: white;
+}
+
+.report-btn {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.report-btn .bi {
+    margin-left: 0.5rem;
+}
+
+.emergency-contact {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--bs-dark);
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.emergency-contact:hover {
+    transform: translateY(-5px);
+}
+
+.emergency-contact.police {
+    border-right: 4px solid var(--bs-info);
+}
+
+.emergency-contact.ambulance {
+    border-right: 4px solid var(--bs-danger);
+}
+
+.emergency-contact.fire {
+    border-right: 4px solid var(--bs-warning);
+}
+
+.emergency-contact .emergency-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.emergency-contact.police .emergency-icon {
+    color: var(--bs-info);
+}
+
+.emergency-contact.ambulance .emergency-icon {
+    color: var(--bs-danger);
+}
+
+.emergency-contact.fire .emergency-icon {
+    color: var(--bs-warning);
+}
+
+.emergency-contact .phone {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.emergency-contact .call-btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.emergency-contact.police .call-btn {
+    background: var(--bs-info);
+    border-color: var(--bs-info);
+    color: var(--bs-dark);
+}
+
+.emergency-contact.ambulance .call-btn {
+    background: var(--bs-danger);
+    border-color: var(--bs-danger);
+}
+
+.emergency-contact.fire .call-btn {
+    background: var(--bs-warning);
+    border-color: var(--bs-warning);
+    color: var(--bs-dark);
+}

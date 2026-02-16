@@ -1,0 +1,239 @@
+/* Services Cards */
+.service-card {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card .service-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card .service-icon i {
+    font-size: 2rem;
+}
+
+.service-card.maintenance .service-icon {
+    background: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary);
+}
+
+.service-card.garden .service-icon {
+    background: rgba(var(--success-rgb), 0.1);
+    color: var(--success);
+}
+
+.service-card.general .service-icon {
+    background: rgba(var(--info-rgb), 0.1);
+    color: var(--info);
+}
+
+.service-card h4 {
+    margin-bottom: 1rem;
+}
+
+.service-card .stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.service-card .stats>div {
+    text-align: center;
+}
+
+.service-card .stats .h4 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.service-card .stats small {
+    color: var(--gray);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.service-item {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: var(--light);
+    color: var(--dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.service-item i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.service-item span {
+    font-size: 0.875rem;
+    display: block;
+}
+
+/* Tickets */
+.ticket-card {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    height: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.ticket-card .ticket-status,
+.ticket-card .ticket-priority,
+.ticket-card .ticket-type {
+    position: absolute;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+}
+
+.ticket-card .ticket-status {
+    top: 1rem;
+    right: 1rem;
+}
+
+.ticket-card .ticket-priority {
+    top: 1rem;
+    left: 1rem;
+}
+
+.ticket-card .ticket-type {
+    top: -0.75rem;
+    right: 1rem;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.ticket-card .ticket-type i {
+    margin-left: 0.5rem;
+}
+
+.ticket-card .ticket-title {
+    margin: 2rem 0 1rem;
+}
+
+.ticket-card .ticket-details {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    white-space: pre-line;
+}
+
+.ticket-card .ticket-meta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.875rem;
+    color: var(--gray);
+}
+
+.ticket-card .ticket-meta i {
+    margin-left: 0.5rem;
+}
+
+.ticket-card .ticket-workers {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.875rem;
+    color: var(--gray);
+}
+
+.ticket-card .ticket-workers i {
+    margin-left: 0.5rem;
+}
+
+.ticket-card .ticket-actions {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Status Colors */
+.ticket-status.new,
+.ticket-status.scheduled {
+    background: rgba(var(--secondary-rgb), 0.1);
+    color: var(--secondary);
+}
+
+.ticket-status.in_progress {
+    background: rgba(var(--info-rgb), 0.1);
+    color: var(--info);
+}
+
+.ticket-status.resolved,
+.ticket-status.done {
+    background: rgba(var(--success-rgb), 0.1);
+    color: var(--success);
+}
+
+.ticket-status.closed,
+.ticket-status.cancelled {
+    background: rgba(var(--dark-rgb), 0.1);
+    color: var(--dark);
+}
+
+/* Priority Colors */
+.ticket-priority.low {
+    background: rgba(var(--success-rgb), 0.1);
+    color: var(--success);
+}
+
+.ticket-priority.medium {
+    background: rgba(var(--info-rgb), 0.1);
+    color: var(--info);
+}
+
+.ticket-priority.high {
+    background: rgba(var(--warning-rgb), 0.1);
+    color: var(--warning);
+}
+
+.ticket-priority.urgent {
+    background: rgba(var(--danger-rgb), 0.1);
+    color: var(--danger);
+}
+
+/* Unit Info */
+.ticket-unit {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.ticket-unit i {
+    margin-left: 0.5rem;
+}

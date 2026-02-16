@@ -1,0 +1,18 @@
+/* Simple conference pages styling */
+.conference-list .card {
+    border: none;
+}
+
+.conference-list .card .card-body {
+    padding: 1.25rem;
+}
+
+.conference-booking .card {
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .conference-list .card {
+        height: 100%;
+    }
+}

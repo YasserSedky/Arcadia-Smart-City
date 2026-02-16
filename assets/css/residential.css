@@ -1,0 +1,143 @@
+.residential-block {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--bs-dark);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.residential-block:hover {
+    transform: translateY(-5px);
+}
+
+.residential-block .bi {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--bs-info);
+}
+
+.residential-block.villa {
+    border-right: 4px solid var(--bs-success);
+}
+
+.residential-block.villa .bi {
+    color: var(--bs-success);
+}
+
+.residential-block.apartment {
+    border-right: 4px solid var(--bs-info);
+}
+
+.residential-units {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.residential-unit {
+    padding: 0.5rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.residential-unit.occupied {
+    background: rgba(var(--bs-success-rgb), 0.1);
+    border: 1px solid rgba(var(--bs-success-rgb), 0.2);
+}
+
+.my-unit-card {
+    position: relative;
+    padding: 2rem;
+    border-radius: 12px;
+    background: var(--bs-dark);
+    margin-bottom: 2rem;
+}
+
+.my-unit-card .bi {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--bs-info);
+}
+
+.my-unit-card.villa .bi {
+    color: var(--bs-success);
+}
+
+.maintenance-request {
+    position: relative;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.maintenance-request .request-time {
+    font-size: 0.875rem;
+    color: var(--bs-gray-500);
+}
+
+.maintenance-request .priority-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.maintenance-request .priority-badge.urgent {
+    background: var(--bs-danger);
+    color: white;
+}
+
+.maintenance-request .priority-badge.high {
+    background: var(--bs-warning);
+    color: var(--bs-dark);
+}
+
+.maintenance-request .priority-badge.medium {
+    background: var(--bs-info);
+    color: var(--bs-dark);
+}
+
+.maintenance-request .priority-badge.low {
+    background: var(--bs-secondary);
+    color: white;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.status-badge.open {
+    background: var(--bs-warning);
+    color: var(--bs-dark);
+}
+
+.status-badge.assigned {
+    background: var(--bs-info);
+    color: var(--bs-dark);
+}
+
+.status-badge.in_progress {
+    background: var(--bs-primary);
+    color: white;
+}
+
+.status-badge.resolved {
+    background: var(--bs-success);
+    color: white;
+}
+
+.status-badge.closed {
+    background: var(--bs-secondary);
+    color: white;
+}

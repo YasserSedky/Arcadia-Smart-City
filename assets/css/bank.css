@@ -1,0 +1,14 @@
+/* Bank section styles */
+.bank-card {
+    border: none;
+}
+
+.bank-card .card-body {
+    padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .bank-card .card-body {
+        min-height: 140px;
+    }
+}
