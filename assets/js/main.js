@@ -44,12 +44,34 @@ document.addEventListener("DOMContentLoaded", function () {
     var icon = toggle.querySelector("i");
     if (icon) icon.className = theme === "light" ? "bi bi-sun" : "bi bi-moon";
     toggle.addEventListener("click", function () {
+      // Add transition class for smooth theme change
+      document.body.classList.add("theme-transition");
       theme = theme === "light" ? "dark" : "light";
       root.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
       var ic = toggle.querySelector("i");
-      if (ic) ic.className = theme === "light" ? "bi bi-sun" : "bi bi-moon";
+      if (ic) {
+        ic.className = theme === "light" ? "bi bi-sun" : "bi bi-moon";
+        // Add rotation animation
+        ic.style.transform = "rotate(360deg)";
+        setTimeout(function () {
+          ic.style.transform = "";
+        }, 300);
+      }
+      // Remove transition class after animation
+      setTimeout(function () {
+        document.body.classList.remove("theme-transition");
+      }, 300);
+    });
+  }
+
+  // Initialize Bootstrap tooltips
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+  );
+  if (typeof bootstrap !== "undefined" && bootstrap.Tooltip) {
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
     });
   }
 });
-

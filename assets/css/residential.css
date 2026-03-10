@@ -92,7 +92,7 @@
 
 .maintenance-request .priority-badge.urgent {
     background: var(--bs-danger);
-    color: white;
+    color: var(--text);
 }
 
 .maintenance-request .priority-badge.high {
@@ -107,7 +107,7 @@
 
 .maintenance-request .priority-badge.low {
     background: var(--bs-secondary);
-    color: white;
+    color: var(--text);
 }
 
 .status-badge {
@@ -129,15 +129,15 @@
 
 .status-badge.in_progress {
     background: var(--bs-primary);
-    color: white;
+    color: var(--text);
 }
 
 .status-badge.resolved {
     background: var(--bs-success);
-    color: white;
+    color: var(--text);
 }
 
 .status-badge.closed {
     background: var(--bs-secondary);
-    color: white;
+    color: var(--text);
 }

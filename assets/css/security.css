@@ -83,7 +83,7 @@
 
 .security-incident .incident-level.level-critical {
     background: var(--bs-danger);
-    color: white;
+    color: var(--text);
 }
 
 .report-btn {

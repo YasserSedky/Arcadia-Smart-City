@@ -14,7 +14,7 @@
 /* Facilities Section */
 .facilities-section .facility-card {
     border: none;
-    background: #fff;
+    background: var(--glass-bg);
     overflow: hidden;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .facilities-section .facility-description {
-    color: #6c757d;
+    color: var(--muted);
     font-size: 0.95em;
     line-height: 1.6;
     margin: 1rem 0;
@@ -61,7 +61,7 @@
 .facilities-section .requirements-note {
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: var(--glass-bg);
 }
 
 /* Activities Section */
@@ -85,7 +85,7 @@
 }
 
 .activities-section .facility-name {
-    color: #6c757d;
+    color: var(--muted);
     font-size: 0.9rem;
     margin-bottom: 0;
 }
@@ -98,17 +98,17 @@
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    color: #495057;
+    color: var(--text);
 }
 
 .activities-section .detail-item i {
     width: 20px;
-    color: var(--primary);
+    color: var(--sand-100);
 }
 
 .activities-section .detail-item span {
     margin-right: 0.5rem;
-    color: #6c757d;
+    color: var(--muted);
 }
 
 .activities-section .detail-item strong {
@@ -117,7 +117,7 @@
 
 .activities-section .activity-description {
     font-size: 0.9rem;
-    color: #6c757d;
+    color: var(--muted);
     line-height: 1.5;
 }
 
@@ -139,7 +139,7 @@
 .activities-section .btn-gradient {
     background: linear-gradient(45deg, var(--primary), var(--primary-light));
     border: none;
-    color: white;
+    color: var(--text);
     padding: 0.5rem 1rem;
 }
 
