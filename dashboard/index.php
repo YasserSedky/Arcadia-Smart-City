@@ -45,6 +45,7 @@ function sectionCard($icon, $title, $desc, $href)
     if ($isSuper || $role === 'hq_admin') sectionCard('bi-building-gear', 'المقر الإداري HQ', 'إعلانات وإدارة المدينة', '/dashboard/hq/index.php');
     if ($isSuper || $role === 'services_admin') sectionCard('bi-tools', 'الخدمات والصيانة', 'بلاغات الصيانة والحدائق', '/dashboard/services/index.php');
     if ($isSuper || $role === 'energy_admin') sectionCard('bi-sun', 'الطاقة الشمسية', 'إدارة الألواح والإنتاج', '/dashboard/energy/index.php');
+    if ($isSuper || $role === 'water_admin') sectionCard('bi-droplet', 'محطات المياه', 'إدارة محطات المياه والتوزيع', '/dashboard/water/index.php');
 
     // Resident view
     if ($role === 'resident') {

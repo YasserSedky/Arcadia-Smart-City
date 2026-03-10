@@ -52,7 +52,7 @@ ensure_session();
             <li class="nav-item"><a class="nav-link" href="<?php echo APP_BASE; ?>/auth/login.php">تسجيل الدخول</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo APP_BASE; ?>/auth/register.php">إنشاء حساب</a></li>
           <?php endif; ?>
-          <li class="nav-item ms-2"><button class="btn btn-outline-light btn-sm" id="theme-toggle" aria-label="تبديل الثيم"><i class="bi bi-moon"></i></button></li>
+          <li class="nav-item ms-2"><button class="btn btn-outline-light btn-sm theme-toggle-btn" id="theme-toggle" aria-label="تبديل الثيم" data-bs-toggle="tooltip" data-bs-placement="bottom" title="تبديل الوضع الفاتح/الداكن"><i class="bi bi-moon"></i></button></li>
         </ul>
       </div>
     </div>
