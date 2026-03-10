@@ -30,8 +30,7 @@ if (isset($_SESSION['user']) && is_array($_SESSION['user']) && !empty($_SESSION[
     <nav class="navbar navbar-expand-lg sticky-top glass-nav">
         <div class="container">
             <div>
-                <a class="navbar-brand fw-bold text-gradient" href="#home">Arcadia Smart City</a>
-                <div class="small text-muted" style="font-size:12px;">مدينتك الذكية المتكاملة</div>
+                <a class="navbar-brand fw-bold text-gradient" href="#home">Arcadia</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,6 +48,11 @@ if (isset($_SESSION['user']) && is_array($_SESSION['user']) && !empty($_SESSION[
                     <li class="nav-item"><a class="nav-link" href="#security">الأمن والطوارئ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#residential">السكن</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-outline-light btn-sm theme-toggle-btn" id="theme-toggle" aria-label="تبديل الثيم" data-bs-toggle="tooltip" data-bs-placement="bottom" title="تبديل الوضع الفاتح/الداكن">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
                     <?php if (!empty($user)): ?>
                         <li class="nav-item dropdown ms-lg-2">
                             <a class="btn btn-gradient dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
